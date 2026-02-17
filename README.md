@@ -9,3 +9,4 @@ The current implementations focus on the initial stages of the syllabus, specifi
 ## 🗃️ Files created
   * `Lecture 2/chessboard.m`: Naive implementation of a simple chessboar...have to improve and make it elegant
   * `Lecture 2/transformations.m` : Basic commands for working with images, ie. cropping, resizing, rotating, etc
+  * `Lecture 3/imageDetect.m`: Basic implementation of object detection using image subtraction...still in progress
