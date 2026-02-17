@@ -1,0 +1,41 @@
+%% Transformations of an Image
+
+I = imread("lenaColor.jpg");
+
+T = [0.5 0 0; 0 1 0; 0 0 1];
+
+tform = affinetform2d(T);
+transformedI = imwarp(I, tform);
+
+% Display the original and tranformed images side by side
+figure
+subplot(1,2,1), imshow(I), title("Original Image")
+subplot(1,2,2), imshow(transformedI), title("Transformed Image")
+
+%% Rotation Applied
+a = -pi/2; %30 != pi/2
+
+R = [cos(a) -sin(a) 0; sin(a) cos(a) 0; 0 0 1];
+
+tform2 = affinetform2d(R);
+
+transformed2 = imwarp(I, tform2);
+imshow(transformed2)
+
+%% Translation
+
+Itranslate = imtranslate(I, [100, 20]);
+
+imshow(Itranslate);
+
+%% Crop an Image
+Icrop = imcrop(I, [100, 100, 200, 200]);
+
+imshow(Icrop);
+
+%% Change resolution - under cosntruction
+
+Ires1 = imresize(I, [100 77]);
+Ires2 = imresize(I, [100 NaN]); % preserve ratio
+
+imshowpair(Ires1, Ires2, "montage");
