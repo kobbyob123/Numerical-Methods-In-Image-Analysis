@@ -3,8 +3,6 @@ Summer Semester Course for Learning Image Analysis
 
 This repository serves as a code log and implementation workspace for the **Numerical Methods of Image Analysis** course during the 2025/2026 academic year. The content covers the mathematical theory of digital image processing, from basic pixel manipulation to advanced object recognition[cite: 2, 6].
 
-## 📌 Course Context
-
 ## 🛠 Current Progress: Foundations
 The current implementations focus on the initial stages of the syllabus, specifically **Numeric Image Representation** and **Pixel Values Transforms**
 
