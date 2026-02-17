@@ -17,4 +17,3 @@ new = regionprops(Idiff);
 
 if regionprops(Iclear) > 10
 end
-

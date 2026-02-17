@@ -12,4 +12,4 @@ t = linspace(0,dur,nTimeSamples);
 
 y = sin(5*pi*freq*t) + cos(3*pi*freq*t);
 
-sound(y,sampRate);  
+sound(y,sampRate); 
